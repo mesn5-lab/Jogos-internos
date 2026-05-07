@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="style.css">
 
     <!--Fontes-->
-    <link
-     href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap"
-     rel="stylesheet"
-    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@600&display=swap" rel="stylesheet">
+
+    <!--Ícones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <header class="menu">
-        <h1>Jogos Internos IFAL 2026</h1>
-        <nav>
+    <header class="cabecalho">
+        <div class="logo">🏆 Jogos Internos IFAL 2026</div>        
+        <nav class="menu">
             <a href="index.html">Home</a>
             <a href="programacao.html">Programação</a>
             <a href="modalidades.html">Modalidades</a>
@@ -26,15 +28,57 @@
         </nav>
     </header>
 
-    <section class="banner">
-        <h2>Esporte, União e Competição!</h2>
+    <section class="banner" id="Home">
+        <h1>JOGOS INTERNOS IFAL 2026</h1>
+        <p>ESPORTE • UNIÃO • COMPETIÇÃO</p>
     </section>
 
-    <section class="container">
-        <h2>Sobre o Evento</h2>
-        <p>
-            Os Jogos Internos do IFAL - Campus Arapiraca, amplamente conhecidos pela sigla JIFAL, constituem um dos momentos mais vibrantes e aguardados do calendário acadêmico. Muito além de uma simples pausa nas aulas teóricas e práticas de laboratório, o evento se configura como uma ferramenta pedagógica essencial que utiliza o esporte para promover a integração plena entre alunos, docentes e técnicos administrativos. A realização dos jogos transforma o ambiente do campus, substituindo temporariamente a rotina dos cursos de Informática e Eletrotécnica por uma atmosfera de celebração
-        </p>
-    </section>
+    <main class="main-content">
+        <article class="resumo" id="resumo">
+            <div class="texto">
+                <h2>O que é o JIFAL?</h2>         
+                <br>       
+                <p>
+                    Os Jogos Internos do IFAL Arapiraca (JIFAL) transformam a rotina técnica de Informática e 
+                    Eletroeletrônica em uma grande celebração de união. Muito além da disputa esportiva em modalidades 
+                    como futsal, vôlei e xadrez, o evento é uma ferramenta de saúde e ética que prepara talentos para competições 
+                    nacionais e fortalece o protagonismo dos alunos.
+                </p>
+                <p>
+                    O ponto alto é a abertura, marcada pela criatividade das torcidas e pelo esforço coletivo que une estudantes e servidores. 
+                    No fim, o JIFAL prova que a formação no instituto vai além da técnica: trata-se de construir uma família e guardar memórias 
+                    valiosas que equilibram o aprendizado intelectual com o bem-estar social e emocional.
+                </p>
+
+                <br>
+                <h3>Data do Evento</h3>
+                <p><strong>Início:</strong> 13/05/2026</p>
+                <p><strong>Término:</strong> 16/05/2026</p> 
+            </div>                       
+
+           <img src="imagens/urso.png"> 
+        </article>              
+        <section id="destaques">
+            <h2 class="titulo-sessao">Destaques deste Ano</h2>
+            <div class="destaques-container">
+                <div class="destaque-card">                    
+                    <h3><span class="icon">🏓</span> Tênis de Mesa</h3>
+                    <p>Pela primeira vez, teremos disputas intensas de reflexo e agilidade no campus.</p>
+                </div>
+                <div class="destaque-card equipe">                    
+                    <h3><span class="icon">🛡️</span> 13 Equipes</h3>
+                    <p>Com a chegada de uma nova turma este ano, teremos 13 equipes confirmadas no evento mais esperado do ano.</p>
+                </div>
+            </div>
+        </section>
+    </main-class>    
+
+    <footer class="footer"> 
+        <p><strong>IFAL - Campus Arapiraca</strong></p>   
+        <p>Desenvolvedores: Alaryce Jaylle, Maria Eduarda e Raissa Almeida</p>                        
+        <p>Instagram: @913ifal_</p>   
+        <p>2026</p>                                  
+    </footer>
 </body>
 </html>
+             
