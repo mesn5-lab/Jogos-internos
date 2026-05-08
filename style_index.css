@@ -12,7 +12,7 @@ body {
 }
 
 .cabecalho {
-    display:flex;
+    display: flex;
     background-color: #1b5e20;
     color: white;
     padding-left: 10px;
