@@ -1,13 +1,14 @@
+/*seletor universal, vale para todas tags da página*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /*margem externa*/
+    padding: 0; /*margem interna*/
+    box-sizing: border-box; /*controla o tamanho de cada elemento*/
 }
 
 body {    
     font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: column;
+    display: flex; /*ativa o flexbox*/
+    flex-direction: column; /*organiza os elementos da página um abaixo do outro*/
     background-color: #f4f7f6;
 }
 
@@ -17,12 +18,12 @@ body {
     color: white;
     padding-left: 10px;
     padding-right: 40px;
-    justify-content: space-between;     
+    justify-content: space-between; /*alinha o conteúdo na horizontal, declarando espaçamento igual entre os elementos*/ 
     height: 60px;
-    border-bottom: 5px solid #d4af37;
+    border-bottom: 5px solid #d4af37; /*borda inferior*/
     flex-direction: row;
-    width: 100%;
-    position: sticky;
+    width: 100%; /*define que seja utilizada toda a largura da tela*/
+    position: sticky; /*faz o cabeçalho ficar fixo no topo da tela*/
 }
 
 .logo {
@@ -30,47 +31,53 @@ body {
     color: #d4af37;
     font-size: 24px;
     font-weight: bold; 
-    min-width: 300px;
+    min-width: 300px; /*largura mínima a ser utilizada*/
     display: flex;
-    align-items: center;
+    align-items: center; /*alinha o conteúdo na vertical, centralizados na altura da barra do cabeçalho*/
 }
 
+/*alinha os links um ao lado do outro, centralizados horizontal e verticalmente*/
 .menu {
     display: flex;
     align-items: center;
     justify-content: center;  
-    gap: 20px;     
+    gap: 20px; /*espaço vazio entre cada link*/
 }
 
+/*estilização das tags de link*/
 .menu a{
     color: #ffffff; 
     font-weight: bold;
-    text-decoration: none;    
+    text-decoration: none; /*remove a linha sublinhada*/  
 }
 
+/*estilização das tags de link 'quando o mouse passa por cima'*/
 .menu a:hover{
-    text-decoration: underline;   
+    text-decoration: underline; /*mostra a linha sublinhada*/
     color: #d4af37;
 }
 
 .banner {
     height: 400px;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(https://lh3.googleusercontent.com/gps-cs-s/APNQkAHMFOq-M-R30sv0akIscafmHt12GQyiHRgjTswJgqsHKdi8V9sEJBf947KGU-f-0l7MnlXCSULmYWnLoiHufusKFaZwG7H6xxqKWcGx4JLpfLjH86q1LyFDFjMrqxc-OBLobV0Q=s1360-w1360-h1020-rw);
-    background-size: cover;
-    background-position: center;
+    /*linear-gradient: aplica uma camada escura transparente por cima da imagem de fundo, para escurecer a foto e fazer o texto ficar legível*/
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(https://lh3.googleusercontent.com/gps-cs-s/APNQkAHMFOq-M-R30sv0akIscafmHt12GQyiHRgjTswJgqsHKdi8V9sEJBf947KGU-f-0l7MnlXCSULmYWnLoiHufusKFaZwG7H6xxqKWcGx4JLpfLjH86q1LyFDFjMrqxc-OBLobV0Q=s1360-w1360-h1020-rw); 
+    background-size: cover; /*cobre todo o espaço do banner*/
+    background-position: center; /*centraliza o fundo*/
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-start; /*alinha verticalmente começando na esquerda*/
     color: white;
 }
 
+/*estilização do título principal*/
 .banner h1 {
     color: white;
     font-size: 30px;
     padding-left: 15px;
 }
 
+/*estilização do texto*/
 .banner p {
     font-family: 'Oswald', sans-serif;
     color: #d4af37;
@@ -79,8 +86,7 @@ body {
 }
 
 .main-content {
-    padding: 50 px 30 px;
-    flex-grow: 1;
+    flex-grow: 1; /*estica o conteúdo principal pra ocupar todo o espaço vazio da tela, fixando o rodapé no fim da tela*/
 }
 
 .resumo {
@@ -91,11 +97,11 @@ body {
     background-color: white;
     padding: 30px;
     padding-right: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.8);
+    border-radius: 12px; /*borda arredondada*/
+    box-shadow: 0 4px 15px rgba(0,0,0,0.8); /*sombreamento na caixa*/
     margin: 20px;   
     width: 1100px; 
-    margin: 0 auto;
+    margin: 0 auto; /*centraliza a caixa inteira na tela*/
     margin-top: 20px;
 }
 
@@ -107,7 +113,7 @@ body {
 .destaques-container {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*se o conteúdo ultrapassar a tela, joga o card para a linha de baixo*/
     width: 1100px; 
     margin: 0 auto;
 }
@@ -126,7 +132,7 @@ body {
 .icon {
     font-size: 30px;
     margin-bottom: 10px;
-    display: block;
+    display: block; /*centraliza o ícone e empurra o texto para baixo dele*/
 }
 
 .footer {
@@ -135,5 +141,5 @@ body {
     padding: 15px 20px 15px;
     margin-top: 30px;
     border-top: 5px solid #d4af37;  
-    width: 100%08;
+    width: 100%;
 }
