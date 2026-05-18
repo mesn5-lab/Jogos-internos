@@ -1,0 +1,55 @@
+.grade-equipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.8);
+    display: flex;
+    flex-direction: column;
+    border-top: 5px solid #d4af37;
+}
+
+.card-header {
+    padding: 0;                
+    height: 300px;             
+    overflow: hidden; /* Garante que o que sobrar da foto não saia do card */
+    display: flex;
+    align-items: center;       
+    justify-content: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.mascote{    
+    width: 100%;              
+    height: 100%;              
+    object-fit: cover;
+}
+
+.card-equipe {
+    padding: 12px 20px;
+    font-size: 13px;
+    font-weight: bold;
+    color: black;    
+}
+
+.cores {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.circulo-cor {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}

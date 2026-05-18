@@ -21,7 +21,7 @@ body {
     justify-content: space-between; /*alinha o conteúdo na horizontal, declarando espaçamento igual entre os elementos*/ 
     height: 60px;
     border-bottom: 5px solid #d4af37; /*borda inferior*/
-    flex-direction: row;
+    flex-direction: row;  /*alinha o conteúdo lado a lado em uma linha horizontal*/
     width: 100%; /*define que seja utilizada toda a largura da tela*/
     position: sticky; /*faz o cabeçalho ficar fixo no topo da tela*/
 }
