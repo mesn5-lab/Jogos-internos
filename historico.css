@@ -1,25 +1,18 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body {
-    background-color: #f4f6f9;
-    padding: 40px 20px;
-}
-
-.historico-container {
-    max-width: 1200px;
-    margin: 0 auto;
+.historico-container {    
+    padding: 50px 20px;
+    text-align: center; /*centraliza o texto*/
+    margin: 30px;    
+    box-shadow: 0 4px 15px rgba(0,0,0,0.8);
+    border-radius: 10px;
+    background-color: white;
 }
 
 .titulo-seccao {
-    color: #2c5040;
-    margin-bottom: 30px;
-    border-bottom: 3px solid #34495e;
-    padding-bottom: 10px;
+    text-align: center;
+    color: #1b5e20;
+    font-size: 40px;
+    margin-bottom: 40px;
+    letter-spacing: 2px; 
 }
 
 /* CONTAINER FLEXBOX PRINCIPAL */
@@ -34,11 +27,11 @@ body {
 .card-modalidade {
     background-color: white;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
     padding: 20px;
     flex: 1 1 calc(33.333% - 25px); /* Tenta manter 3 por linha em telas grandes */
     min-width: 300px;                /* Não deixa o card ficar espremido demais */
-    border-top: 5px solid #049f2b;   /* Detalhe azul no topo do card */
+    border-top: 5px solid #d4af37;   /* Detalhe dourado no topo do card */
 }
 
 .card-modalidade h3 {

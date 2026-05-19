@@ -1,23 +1,12 @@
-* {
-    margin: 0; /*margem externa*/
-    padding: 0; /*margem interna*/
-    box-sizing: border-box; /*controla o tamanho de cada elemento*/
-}
-
-body {    
-    font-family: 'Montserrat', sans-serif;
-    display: flex; /*ativa o flexbox*/
-    flex-direction: column; /*organiza os elementos da página um abaixo do outro*/
-    background-color: #1b5e20;
-}
-
 .grade-agendas {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    max-width: 90%;
-    justify-content: space-between;
+    max-width: 1120px;
+    justify-content: center;
+    align-items: center;
     padding: 40px;
+    margin: 0
 }
 
 .colunas-dia {
@@ -54,7 +43,7 @@ body {
     height: 470px;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.8);
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -67,7 +56,7 @@ body {
 
 .agenda-topo {
     height: 70px;
-    background-color: #006b3f;
+    background-color: #d4af37;
     display: flex;
     justify-content: center;
     align-items: center;
