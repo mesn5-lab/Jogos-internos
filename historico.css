@@ -15,23 +15,22 @@
     letter-spacing: 2px; 
 }
 
-/* CONTAINER FLEXBOX PRINCIPAL */
 .cards-grid-flex {
     display: flex;
-    flex-wrap: wrap; /* Faz os cards quebrarem para a linha de baixo se não couberem */
-    gap: 25px;       /* Espaçamento entre os blocos */
+    flex-direction: wrap; 
+    gap: 25px;       
     justify-content: flex-start;
 }
 
-/* CONFIGURAÇÃO DOS CARDS INDIVIDUAIS */
+
 .card-modalidade {
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
     padding: 20px;
-    flex: 1 1 calc(33.333% - 25px); /* Tenta manter 3 por linha em telas grandes */
-    min-width: 300px;                /* Não deixa o card ficar espremido demais */
-    border-top: 5px solid #d4af37;   /* Detalhe dourado no topo do card */
+    flex: 1 1 calc(33.333% - 25px); 
+    min-width: 300px;               
+    border-top: 5px solid #d4af37;  
 }
 
 .card-modalidade h3 {
@@ -42,7 +41,6 @@
     letter-spacing: 0.5px;
 }
 
-/* SUB-CATEGORIAS (Feminino / Masculino / Duplas) */
 .sub-categoria {
     margin-bottom: 15px;
 }
@@ -71,7 +69,7 @@
     color: #34495e;
 }
 
-/* ESTILIZAÇÃO E CORES DO PÓDIO */
+
 .posicao {
     font-weight: bold;
     margin-right: 10px;
@@ -79,33 +77,33 @@
 }
 
 .ouro {
-    color: #d4af37; /* Cor de Ouro */
+    color: #d4af37; 
     font-weight: 600;
 }
 
 .prata {
-    color: #8a9597; /* Cor de Prata */
+    color: #8a9597; 
 }
 
 .bronze {
-    color: #cd7f32; /* Cor de Bronze */
+    color: #cd7f32;
 }
 
-/* Estilo para as posições vazias */
+
 .sem-podio {
     color: #bdc3c7;
     font-style: italic;
 }
 
-/* RESPONSIVIDADE */
-@media (max-width: 900px) {
+
+/**@media (max-width: 900px) {
     .card-modalidade {
-        flex: 1 1 calc(50% - 25px); /* Fica 2 cards por linha em tablets */
+        flex: 1 1 calc(50% - 25px); 
     }
 }
 
 @media (max-width: 600px) {
     .card-modalidade {
-        flex: 1 1 100%; /* Fica 1 card por linha em celulares */
+        flex: 1 1 100%; 
     }
 }
