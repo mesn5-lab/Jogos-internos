@@ -17,8 +17,9 @@
 
 .cards-grid-flex {
     display: flex;
-    flex-direction: wrap; 
-    gap: 25px;       
+    flex-direction: row; 
+    flex-wrap: wrap;
+    gap: 15px;       
     justify-content: flex-start;
 }
 
@@ -96,7 +97,7 @@
 }
 
 
-/**@media (max-width: 900px) {
+@media (max-width: 900px) {
     .card-modalidade {
         flex: 1 1 calc(50% - 25px); 
     }
